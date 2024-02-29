@@ -1,0 +1,263 @@
+:root {
+  --main-color: #9356dc;
+  --secondary-color: #ff79da;
+  --third-color: #99e2d0;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.fa-solid {
+  color: black;
+}
+
+.card img {
+  object-fit: cover;
+}
+
+h3,
+p {
+  margin: 0px;
+}
+
+img {
+  width: 100%;
+  height: 50%;
+}
+
+header {
+  background: white;
+}
+
+body {
+  margin: 0px;
+}
+
+.main-container {
+  width: 100%;
+  max-width: 1440px;
+  box-sizing: border-box;
+  background: #f6f6f6;
+}
+.main-container img {
+  max-height: 300px;
+  object-fit: cover;
+}
+
+/***** Header and image *****/
+.restaurant-title {
+  font-family: "Shrikhand", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0px;
+}
+
+.logo-arrow {
+  text-align: center;
+  position: relative;
+}
+.logo-arrow .fa-arrow-left {
+  position: absolute;
+  bottom: 50%;
+  left: 5%;
+}
+.logo-arrow .logo-ohmyfood {
+  width: 50%;
+  padding: 20px 20px 10px 20px;
+}
+
+/***** Menu ****/
+.menu-card {
+  animation-duration: 1500ms;
+  animation-name: translate-menu;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes translate-menu {
+  0% {
+    transform: translateY(500px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.menu-title {
+  padding-bottom: 20px;
+  padding-top: 30px;
+  display: inline-block;
+  font-weight: 300;
+  position: relative;
+}
+.menu-title:after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  border-bottom: 4px solid #99E2D0;
+  bottom: 10px;
+  left: 0px;
+}
+
+.restaurant {
+  background: #f6f6f6;
+  position: relative;
+  bottom: 60px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  padding: 20px;
+}
+.restaurant .title-heart {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.25em;
+  margin: 0px;
+  padding: 20px 20px 0px 0px;
+}
+.restaurant .title-heart .heart {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+.restaurant .title-heart .fa-solid {
+  color: var(--main-color);
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.restaurant .title-heart .fa-solid:hover {
+  opacity: 1;
+}
+
+.card {
+  background-color: white;
+  border-radius: 20px;
+  filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.2));
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+.card .name-description {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.card .name-description h3 {
+  padding-bottom: 5px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.card .name-description p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.card .price {
+  width: 80px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 20px;
+}
+.card .checkbox {
+  text-align: center;
+  width: 0px;
+  height: 77px;
+  background-color: #99e2d0;
+  border-radius: 0px 20px 20px 0px;
+}
+.card .checkbox .fa-circle-check {
+  padding-top: 38px;
+  color: white;
+}
+
+@keyframes check-button-animation {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 80px;
+  }
+}
+.card:hover .checkbox {
+  animation-name: check-button-animation;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
+  transition: 0.25s;
+}
+
+/******** Command button *******/
+.command-button {
+  display: flex;
+  justify-content: center;
+}
+.command-button a {
+  text-decoration: none;
+  position: relative;
+  bottom: 50px;
+}
+.command-button .btn {
+  width: 100%;
+  padding: 15px 60px;
+  font-size: 1rem;
+  border-radius: 30px;
+  border: none;
+  color: white;
+  background: linear-gradient(#ff79da, #9356dc);
+  box-shadow: 0px 5px 5px #c5c5c5;
+  transition: all 500ms;
+  cursor: pointer;
+}
+.command-button .btn:hover {
+  transform: scale(1);
+  box-shadow: 0px 8px 8px #c5c5c5;
+  opacity: 80%;
+}
+
+/******** Footer *******/
+footer {
+  background-color: #f6f6f6;
+  position: relative;
+}
+
+.footer {
+  background-color: #353535;
+  color: white;
+}
+.footer h3 {
+  padding: 20px 0px 20px 20px;
+  margin: 0px;
+}
+.footer ul {
+  padding-left: 20px;
+  padding-bottom: 10px;
+  margin: 0px;
+}
+.footer li {
+  list-style-type: none;
+  padding-bottom: 10px;
+}
+.footer li .li-utensils {
+  padding-left: 16px;
+}
+.footer li .li-logo {
+  padding-left: 10px;
+}
+.footer .fa-solid {
+  color: white;
+}
+.footer .fa-solid .fa-utensils {
+  padding-left: 6px;
+}
+
+/*# sourceMappingURL=style.css.map */

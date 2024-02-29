@@ -1,0 +1,260 @@
+@charset "UTF-8";
+:root {
+  --main-color: #9356dc;
+  --secondary-color: #ff79da;
+  --third-color: #99e2d0;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.fa-solid {
+  color: black;
+}
+
+.card img {
+  object-fit: cover;
+}
+
+body {
+  margin: 0px;
+}
+
+.main-container {
+  width: 100%;
+  max-width: 1440px;
+  box-sizing: border-box;
+}
+
+.restaurant-title {
+  font-family: "Shrikhand", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+  text-align: center;
+}
+header .logo-ohmyfood {
+  width: 50%;
+  padding: 20px;
+}
+
+.location {
+  background-color: #eaeaea;
+  box-shadow: 0px 1px 5px 3px #bcbcbc;
+  /* border-top: solid 1px gray;
+  border-bottom: solid 1px gray; */
+}
+.location p {
+  margin-top: 0px;
+  margin-bottom: 5px;
+  padding: 10px;
+}
+.location .location-city {
+  padding-left: 20px;
+  margin: 3px;
+  font-size: large;
+}
+
+.title-explore {
+  text-align: center;
+  background-color: #f6f6f6;
+  padding: 30px;
+}
+.title-explore h1 {
+  margin: 0px;
+}
+.title-explore p {
+  font-weight: 100;
+  font-size: 1rem;
+  padding-bottom: 15px;
+}
+.title-explore .title-explore-button {
+  display: flex;
+  justify-content: center;
+}
+.title-explore .title-explore-button a {
+  text-decoration: none;
+}
+.title-explore .title-explore-button .btn {
+  width: 100%;
+  padding: 15px 20px;
+  font-size: 1rem;
+  border-radius: 30px;
+  border: none;
+  color: white;
+  background: linear-gradient(var(--secondary-color), var(--main-color));
+  margin-bottom: 20px;
+  box-shadow: 0px 5px 5px #c5c5c5;
+  transition: transform 300ms;
+}
+.title-explore .title-explore-button .btn:hover {
+  transform: scale(1);
+  box-shadow: 0px 10px 10px #c5c5c5;
+  opacity: 80%;
+}
+
+/***** Bannière fonctionnement *****/
+.functioning {
+  padding: 20px;
+}
+.functioning .functioning-cards {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+}
+.functioning .functioning-cards .card {
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  padding: 5px;
+  filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.2));
+  margin-bottom: 20px;
+}
+.functioning .functioning-cards .card .number-cards {
+  border: solid 1px var(--main-color);
+  border-radius: 100%;
+  padding: 0px 6px 0px 6px;
+  color: white;
+  background: var(--main-color);
+  position: relative;
+  right: 18px;
+}
+.functioning .functioning-cards .card-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.functioning .functioning-cards .card-content h3 {
+  padding-left: 20px;
+  font-weight: 400;
+}
+.functioning .functioning-cards .card-content .fa-mobile-screen-button,
+.functioning .functioning-cards .card-content .fa-list {
+  color: #7e7e7e;
+}
+.functioning .functioning-cards .card-content .fa-store {
+  color: #9a6dc9;
+}
+
+/******* cards restaurants *******/
+.restaurant {
+  background-color: #f6f6f6;
+  width: 100%;
+}
+.restaurant .restaurant-cards {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px 0px 20px;
+}
+.restaurant .section-title {
+  padding-left: 20px;
+  padding-top: 50px;
+  margin-bottom: 0px;
+}
+.restaurant a {
+  outline: none;
+  text-decoration: none;
+  color: black;
+}
+.restaurant a .card {
+  background-color: white;
+  border-radius: 20px;
+}
+.restaurant a .card .new-restaurant {
+  position: relative;
+}
+.restaurant a .card .new-restaurant span {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: #0a8c6d;
+  background-color: #99e2d0;
+  border-radius: 5%;
+  padding: 5px 10px;
+  font-weight: 500;
+}
+.restaurant a .card img {
+  width: 100%;
+  height: 200px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.restaurant a .card .wrapper {
+  display: grid;
+  grid-template-columns: 2, 4fr;
+  align-items: center;
+  padding: 15px;
+}
+.restaurant a .card .wrapper .card-content {
+  grid-column: 1/2;
+  grid-row: 1;
+}
+.restaurant a .card .wrapper .card-title {
+  margin: 0px;
+  padding-bottom: 5px;
+}
+.restaurant a .card .wrapper .card-subtitle {
+  margin: 0px;
+}
+.restaurant a .card .wrapper .heart {
+  grid-column: 2/2;
+  grid-row: 1;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+  position: relative;
+}
+.restaurant a .card .wrapper .heart .fa-regular {
+  cursor: pointer;
+}
+.restaurant a .card .wrapper .heart .fa-solid {
+  cursor: pointer;
+  position: absolute;
+  visibility: hidden;
+}
+.restaurant a .card .wrapper .heart .fa-solid .fa-solid:focus {
+  visibility: visible;
+}
+.restaurant a .card .wrapper .heart .fa-solid .fa-solid:focus .fa-regular {
+  visibility: hidden;
+}
+
+/******** Footer *******/
+footer {
+  padding-top: 80px;
+  background-color: #f6f6f6;
+}
+
+.footer {
+  background-color: #353535;
+  color: white;
+}
+.footer h3 {
+  padding: 20px 0px 20px 20px;
+  margin: 0px;
+}
+.footer ul {
+  padding-left: 20px;
+  padding-bottom: 10px;
+  margin: 0px;
+}
+.footer li {
+  list-style-type: none;
+  padding-bottom: 10px;
+}
+.footer li .li-utensils {
+  padding-left: 16px;
+}
+.footer li .li-logo {
+  padding-left: 10px;
+}
+.footer .fa-solid {
+  color: white;
+}
+.footer .fa-solid .fa-utensils {
+  padding-left: 6px;
+}
+
+/*# sourceMappingURL=style.scss.map */
