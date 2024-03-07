@@ -43,3 +43,134 @@
     transform: rotate(360deg);
   }
 }
+
+/***** bouton s'agrandit au survol ****/
+
+.command-button {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  height: 40px;
+  padding: 20px;
+  background-color: #f6f6f6;
+
+  .btn {
+    justify-content: center;
+    width: 100%;
+    padding: 15px 60px;
+    font-size: 1rem;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    background: $main-secondary-gradient;
+    box-shadow: 0px 5px 5px #c5c5c5;
+    text-decoration: none;
+    transition: all 500ms;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1);
+      box-shadow: 0px 8px 8px #c5c5c5;
+      opacity: 80%;
+    }
+  }
+}
+
+/**** apparition et disparition du coeur *****/
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 2, 4fr;
+  align-items: center;
+  padding: 15px;
+  .card-content {
+    grid-column: 1/2;
+    grid-row: 1;
+  }
+  .card-title {
+    margin: 0px;
+    padding-bottom: 5px;
+  }
+  .card-subtitle {
+    margin: 0px;
+  }
+  .heart {
+    grid-column: 2/2;
+    grid-row: 1;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    position: relative;
+    .heart {
+      display: flex;
+      justify-content: flex-end;
+      position: relative;
+    }
+    .fa-solid {
+      color: var(--main-color);
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+    }
+    .fa-solid:hover {
+      opacity: 1;
+    }
+  }
+}
+
+/****** Check button animation *******/
+
+.card {
+  background-color: white;
+  border-radius: 20px;
+  filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.2));
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+  .name-description {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    h3 {
+      padding-bottom: 5px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+    p {
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
+  .price {
+    width: 80px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .checkbox {
+    text-align: center;
+    width: 0px;
+    height: 77px;
+    background-color: #99e2d0;
+    border-radius: 0px 20px 20px 0px;
+    .fa-circle-check {
+      padding-top: 38px;
+      color: white;
+    }
+  }
+}
+
+@keyframes check-button-animation {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 80px;
+  }
+}
