@@ -23,7 +23,9 @@ p {
 
 img {
   width: 100%;
-  height: 50%;
+  height: 60%;
+  position: relative;
+  top: 40px;
 }
 
 header {
@@ -54,17 +56,21 @@ body {
 }
 
 .logo-arrow {
-  text-align: center;
-  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 30px;
+  justify-content: center;
 }
 .logo-arrow .fa-arrow-left {
   position: absolute;
-  bottom: 50%;
   left: 5%;
+  top: 5%;
 }
 .logo-arrow .logo-ohmyfood {
   width: 50%;
-  padding: 20px 20px 10px 20px;
+  padding: 0px 20px 0px 20px;
+  position: relative;
+  bottom: 20px;
 }
 
 /***** Menu ****/
@@ -98,7 +104,7 @@ body {
   content: "";
   position: absolute;
   width: 50px;
-  border-bottom: 4px solid #99E2D0;
+  border-bottom: 4px solid #99e2d0;
   bottom: 10px;
   left: 0px;
 }
@@ -106,10 +112,9 @@ body {
 .restaurant {
   background: #f6f6f6;
   position: relative;
-  bottom: 60px;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
-  padding: 20px;
+  padding: 20px 20px 30px 20px;
 }
 .restaurant .title-heart {
   display: flex;
@@ -198,15 +203,16 @@ body {
 
 /******** Command button *******/
 .command-button {
+  margin: auto;
   display: flex;
   justify-content: center;
-}
-.command-button a {
-  text-decoration: none;
-  position: relative;
-  bottom: 50px;
+  width: 70%;
+  height: 40px;
+  padding: 20px;
+  background-color: #f6f6f6;
 }
 .command-button .btn {
+  justify-content: center;
   width: 100%;
   padding: 15px 60px;
   font-size: 1rem;
@@ -227,12 +233,12 @@ body {
 /******** Footer *******/
 footer {
   background-color: #f6f6f6;
-  position: relative;
 }
 
 .footer {
   background-color: #353535;
   color: white;
+  padding-top: 10px;
 }
 .footer h3 {
   padding: 20px 0px 20px 20px;
@@ -258,6 +264,75 @@ footer {
 }
 .footer .fa-solid .fa-utensils {
   padding-left: 6px;
+}
+.footer .btn-contact {
+  outline: none;
+  text-decoration: none;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .logo-ohmyfood {
+    max-width: 200px;
+    max-height: 100px;
+  }
+  .restaurant .restaurant-title {
+    padding-right: 40px;
+  }
+  .restaurant .title-heart {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .restaurant .menu-card {
+    margin: auto;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .footer {
+    height: 80px;
+  }
+  footer .footer h3 {
+    text-align: center;
+  }
+  footer .footer ul {
+    background-color: #353535;
+    text-align: center;
+    gap: 15px;
+  }
+}
+@media (min-width: 1024px) {
+  .main-container {
+    margin: auto;
+    background-color: white;
+  }
+  .restaurant {
+    width: 70%;
+    margin: auto;
+  }
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .footer h3 {
+    padding: 37px 60px 0px 70px;
+  }
+  .footer ul {
+    display: flex;
+    flex-direction: row;
+  }
+  .footer ul li {
+    padding-top: 40px;
+  }
+  .footer ul .li-logo {
+    padding-right: 50px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
