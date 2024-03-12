@@ -1,0 +1,48 @@
+/******** Footer *******/
+
+footer {
+  background-color: #f6f6f6;
+  padding-top: 80px;
+}
+.footer {
+  background-color: #353535;
+  color: white;
+  h3 {
+    padding: 20px 0px 20px 20px;
+    margin: 0px;
+    font-family: "Shrikhand", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  ul {
+    padding-left: 20px;
+    padding-bottom: 10px;
+    margin: 0px;
+    .btn-contact {
+      outline: none;
+      text-decoration: none;
+      color: #ffff;
+    }
+  }
+  li {
+    list-style-type: none;
+    padding-bottom: 10px;
+    .li-utensils {
+      padding-left: 16px;
+    }
+    .li-logo {
+      padding-left: 10px;
+    }
+  }
+  .fa-solid {
+    color: white;
+    .fa-utensils {
+      padding-left: 6px;
+    }
+  }
+  .btn-contact {
+    outline: none;
+    text-decoration: none;
+    color: #ffff;
+  }
+}

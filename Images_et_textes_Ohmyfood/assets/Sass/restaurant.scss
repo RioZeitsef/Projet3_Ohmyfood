@@ -1,0 +1,82 @@
+.restaurant {
+  background-color: #f6f6f6;
+  width: 100%;
+
+  .restaurant-cards {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 0px 20px;
+  }
+  .section-title {
+    padding-left: 20px;
+    padding-top: 50px;
+    margin-bottom: 0px;
+  }
+  a {
+    outline: none;
+    text-decoration: none;
+    color: black;
+    .card {
+      background-color: white;
+      border-radius: 20px;
+      .new-restaurant {
+        position: relative;
+        span {
+          position: absolute;
+          top: 15px;
+          right: 15px;
+          color: #0a8c6d;
+          background-color: #99e2d0;
+          border-radius: 5%;
+          padding: 5px 10px;
+          font-weight: 500;
+        }
+      }
+      img {
+        width: 100%;
+        height: 200px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+      }
+      .wrapper {
+        display: grid;
+        grid-template-columns: 2, 4fr;
+        align-items: center;
+        padding: 15px;
+        .card-content {
+          grid-column: 1/2;
+          grid-row: 1;
+        }
+        .card-title {
+          margin: 0px;
+          padding-bottom: 5px;
+        }
+        .card-subtitle {
+          margin: 0px;
+        }
+        .heart {
+          grid-column: 2/2;
+          grid-row: 1;
+          display: flex;
+          justify-content: flex-end;
+          padding-right: 20px;
+          position: relative;
+          .heart {
+            display: flex;
+            justify-content: flex-end;
+            position: relative;
+          }
+          .fa-solid {
+            color: var(--main-color);
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+          }
+          .fa-solid:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

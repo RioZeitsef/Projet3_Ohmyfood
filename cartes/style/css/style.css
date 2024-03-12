@@ -251,6 +251,11 @@ footer {
   padding-bottom: 10px;
   margin: 0px;
 }
+.footer ul .btn-contact {
+  outline: none;
+  text-decoration: none;
+  color: white;
+}
 .footer li {
   list-style-type: none;
   padding-bottom: 10px;
@@ -266,11 +271,6 @@ footer {
 }
 .footer .fa-solid .fa-utensils {
   padding-left: 6px;
-}
-.footer .btn-contact {
-  outline: none;
-  text-decoration: none;
-  color: white;
 }
 
 @media (min-width: 768px) {

@@ -286,6 +286,11 @@ footer {
     padding-left: 20px;
     padding-bottom: 10px;
     margin: 0px;
+    .btn-contact {
+      outline: none;
+      text-decoration: none;
+      color: #ffff;
+    }
   }
   li {
     list-style-type: none;
@@ -302,6 +307,11 @@ footer {
     .fa-utensils {
       padding-left: 6px;
     }
+  }
+  .btn-contact {
+    outline: none;
+    text-decoration: none;
+    color: #ffff;
   }
 }
 
@@ -434,11 +444,6 @@ footer {
       }
       .li-logo {
         padding-right: 50px;
-      }
-      .btn-contact {
-        outline: none;
-        text-decoration: none;
-        color: #ffff;
       }
     }
   }

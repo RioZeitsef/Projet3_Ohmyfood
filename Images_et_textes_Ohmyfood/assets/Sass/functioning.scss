@@ -1,0 +1,43 @@
+/***** Bannière fonctionnement *****/
+
+.functioning {
+  padding: 20px;
+  .functioning-cards {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    .card {
+      background-color: #f6f6f6;
+      border-radius: 20px;
+      padding: 5px;
+      filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.2));
+      margin-bottom: 20px;
+      .number-cards {
+        border: solid 1px var(--main-color);
+        border-radius: 100%;
+        padding: 0px 6px 0px 6px;
+        color: white;
+        background: var(--main-color);
+        position: relative;
+        right: 18px;
+      }
+    }
+    .card-content {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      h3 {
+        padding-left: 20px;
+        font-weight: 400;
+      }
+      .fa-mobile-screen-button,
+      .fa-list {
+        color: #7e7e7e;
+      }
+      .fa-store {
+        color: #9a6dc9;
+      }
+    }
+  }
+}
