@@ -1,3 +1,5 @@
+/*** style carte **/
+
 $main-secondary-gradient: linear-gradient(#ff79da, #9356dc);
 
 :root {
@@ -79,9 +81,7 @@ body {
 /***** Menu ****/
 
 .menu-card {
-  animation-duration: 1500ms;
-  animation-name: translate-menu;
-  animation-timing-function: ease-in-out;
+  animation: translate-menu 1700ms ease-in-out;
 }
 
 @keyframes translate-menu {
@@ -90,10 +90,12 @@ body {
     opacity: 0;
   }
   50% {
-    opacity: 0.5;
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.25;
   }
   100% {
-    transform: translateY(0px);
     opacity: 1;
   }
 }

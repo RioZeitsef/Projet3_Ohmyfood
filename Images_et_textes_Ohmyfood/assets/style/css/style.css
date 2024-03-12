@@ -68,12 +68,6 @@ body {
     transform: rotate(360deg);
   }
 }
-.restaurant-title {
-  font-family: "Shrikhand", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
 header {
   background-color: white;
   text-align: center;
@@ -277,6 +271,9 @@ footer {
 .footer h3 {
   padding: 20px 0px 20px 20px;
   margin: 0px;
+  font-family: "Shrikhand", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 .footer ul {
   padding-left: 20px;

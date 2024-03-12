@@ -174,3 +174,27 @@
     width: 80px;
   }
 }
+
+/** Apparition des menus **/
+
+/***** Menu ****/
+
+.menu-card {
+  animation: translate-menu 1700ms ease-in-out;
+}
+
+@keyframes translate-menu {
+  0% {
+    transform: translateY(500px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 1;
+  }
+}
