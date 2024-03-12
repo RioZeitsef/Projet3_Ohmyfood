@@ -78,6 +78,8 @@ header {
   .logo-ohmyfood {
     width: 50%;
     padding: 20px;
+    max-width: 200px;
+    max-height: 100px;
   }
 }
 
@@ -141,10 +143,15 @@ header {
 
 .functioning {
   padding: 20px;
+  h2 {
+    margin: 0px;
+    padding: 20px 0px;
+  }
   .functioning-cards {
     display: flex;
     flex-direction: column;
     padding-left: 15px;
+    padding-bottom: 20px;
     .card {
       background-color: #f6f6f6;
       border-radius: 20px;
@@ -362,6 +369,13 @@ footer {
 }
 
 @media (min-width: 1024px) {
+  body {
+    background: linear-gradient(
+      90deg,
+      rgba(255, 193, 238, 1) 0%,
+      rgba(235, 218, 255, 1) 100%
+    );
+  }
   .main-container {
     margin: auto;
   }
@@ -383,7 +397,9 @@ footer {
       padding: 15px 0px 15px 0px;
     }
   }
-
+  .functioning-and-restaurant {
+    background-color: #fff;
+  }
   .functioning {
     min-width: 1024px;
     background-color: #ffff;

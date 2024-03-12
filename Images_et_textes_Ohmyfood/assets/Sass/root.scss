@@ -1,0 +1,29 @@
+$main-secondary-gradient: linear-gradient(#ff79da, #9356dc);
+
+:root {
+  --main-color: #9356dc;
+  --secondary-color: #ff79da;
+  --third-color: #99e2d0;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.fa-solid {
+  color: black;
+}
+
+.card img {
+  object-fit: cover;
+}
+
+body {
+  margin: 0px;
+}
+
+.main-container {
+  width: 100%;
+  max-width: 1440px;
+  box-sizing: border-box;
+}

@@ -47,6 +47,13 @@
 }
 
 @media (min-width: 1024px) {
+  body {
+    background: linear-gradient(
+      90deg,
+      rgba(255, 193, 238, 1) 0%,
+      rgba(235, 218, 255, 1) 100%
+    );
+  }
   .main-container {
     margin: auto;
   }
@@ -68,7 +75,9 @@
       padding: 15px 0px 15px 0px;
     }
   }
-
+  .functioning-and-restaurant {
+    background-color: #fff;
+  }
   .functioning {
     min-width: 1024px;
     background-color: #ffff;
@@ -130,11 +139,6 @@
       .li-logo {
         padding-right: 50px;
       }
-      .btn-contact {
-        outline: none;
-        text-decoration: none;
-        color: #ffff;
-      }
     }
   }
 }
@@ -166,6 +170,11 @@
     }
   }
 
+  .command-button {
+    margin: 0px;
+    width: 100%;
+  }
+
   footer {
     display: flex;
     flex-direction: column;
@@ -186,13 +195,27 @@
 }
 
 @media (min-width: 1024px) {
+  body {
+    background: linear-gradient(
+      90deg,
+      rgba(255, 238, 250, 1) 0%,
+      rgba(244, 236, 255, 1) 100%
+    );
+  }
+
   .main-container {
     margin: auto;
     background-color: #ffff;
   }
+
   .restaurant {
     width: 70%;
     margin: auto;
+  }
+
+  .command-button {
+    margin: auto;
+    width: 70%;
   }
 
   .footer {
