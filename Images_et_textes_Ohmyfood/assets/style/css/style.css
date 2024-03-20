@@ -46,8 +46,7 @@ body {
   top: 50%;
   left: 50%;
   box-sizing: border-box;
-  animation: rotation 3s linear;
-  animation-duration: 2s;
+  animation: rotation 2s linear;
   animation-fill-mode: forwards;
 }
 
