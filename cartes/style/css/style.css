@@ -186,7 +186,13 @@ body {
   color: white;
 }
 
-@keyframes check-button-animation {
+.card:hover .checkbox {
+  animation-name: in;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes in {
   from {
     width: 0px;
   }
@@ -194,13 +200,20 @@ body {
     width: 80px;
   }
 }
-.card:hover .checkbox {
-  animation-name: check-button-animation;
-  animation-duration: 0.25s;
-  animation-fill-mode: forwards;
-  transition: 0.25s;
+.card .checkbox {
+  animation-name: out;
+  animation-duration: 0.5s;
+  animation-fill-mode: ease-in-out;
 }
 
+@keyframes out {
+  from {
+    width: 80px;
+  }
+  to {
+    width: 0px;
+  }
+}
 /******** Command button *******/
 .command-button {
   display: flex;
